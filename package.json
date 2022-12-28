@@ -1,6 +1,6 @@
 {
   "name": "rename-extension-gncc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "bin": {
     "rename-extension-gncc": "index.js"
@@ -14,7 +14,15 @@
     "type": "git",
     "url": "git+https://github.com/Tunahangncc/change_file_extension_in_project_directory_files.git"
   },
-  "keywords": ["replace", "extension", "file", "directory", "project", "rename", "change"],
+  "keywords": [
+    "replace",
+    "extension",
+    "file",
+    "directory",
+    "project",
+    "rename",
+    "change"
+  ],
   "author": "Tunahan Genç",
   "license": "MIT",
   "bugs": {
