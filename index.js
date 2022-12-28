@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const commandLineArgs = require('command-line-args')
 const path = require("path");
 const fs = require("fs");
