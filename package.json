@@ -1,6 +1,10 @@
 {
-  "name": "change_file_extension_in_project_directory_files",
+  "name": "rename-extension-gncc",
   "version": "1.0.0",
+  "private": false,
+  "bin": {
+    "rename-extension-gncc": "index.js"
+  },
   "description": "You started a project and worked on it for a long time, so there will be a lot of files in your file directory.",
   "main": "index.js",
   "scripts": {
