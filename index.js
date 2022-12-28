@@ -1,6 +1,15 @@
+const commandLineArgs = require('command-line-args')
 const path = require("path");
 const fs = require("fs");
 let files = [];
+
+const optionDefinitions = [
+	{ name: 'from', alias: 'f', type: String, multiple: true },
+	{ name: 'to', alias: 't', type: String },
+	{ name: 'target', alias: 'd', type: String },
+]
+
+const options = commandLineArgs(optionDefinitions)
 
 function getFolderInFile(directory, fileTypes) {
     fs.readdirSync(directory).forEach(file => {
@@ -30,12 +39,18 @@ function renameFile(file, format, newName = null) {
     });
 }
 
+if (options.from === undefined || options.to === undefined || options.from instanceof Array === false || options.from.length === 0 || typeof options.to !== 'string'|| typeof options.target !== 'string') {
+    throw new Error("Please enter the correct parameters.\nExample: node index.js --from js --to ts");
+}
+
+const tagetDir = path.join(process.cwd(), options.target || '.')
+
 // Find Files
-getFolderInFile("./", ['html', 'css', 'scss', 'ipa']);
+getFolderInFile(tagetDir, options.from);
 
 // Rename Files
 if (files.length > 0) {
     files.forEach(file => {
-        renameFile(file, '.js');
+        renameFile(file, `.${options.to}`);
     });
 }

@@ -1,0 +1,23 @@
+{
+  "name": "change_file_extension_in_project_directory_files",
+  "version": "1.0.0",
+  "description": "You started a project and worked on it for a long time, so there will be a lot of files in your file directory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tunahangncc/change_file_extension_in_project_directory_files.git"
+  },
+  "keywords": ["replace", "extension", "file", "directory", "project", "rename", "change"],
+  "author": "Tunahan Genç",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tunahangncc/change_file_extension_in_project_directory_files/issues"
+  },
+  "homepage": "https://github.com/Tunahangncc/change_file_extension_in_project_directory_files#readme",
+  "dependencies": {
+    "command-line-args": "^5.2.1"
+  }
+}
